@@ -1,0 +1,6 @@
+sourcecontroltype [tfs|git]
+server [http://servername/collectionname]
+user [username]
+passwd [password]
+workdir [local directory path]
+sourcedir [server directory path]
