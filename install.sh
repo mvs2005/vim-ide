@@ -41,7 +41,7 @@ tmux set-environment -g TMUX_PLUGIN_MANAGER_PATH "~/.tmux/plugins"
 "$HOME"/.tmux/plugins/tpm/bin/install_plugins || true
 tmux kill-session -t __noop >/dev/null 2>&1 || true
 
-if [ ! -e " ~/.vim/bundle/Vundle.vim" ]; then
+if [ ! -f ~/.vim/bundle/Vundle.vim ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   touch ~/.vimrc
   ln -sf ~/vim-ide/vim/vimrc "$HOME"/.vimrc;
