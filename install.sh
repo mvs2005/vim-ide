@@ -43,7 +43,6 @@ tmux set-environment -g TMUX_PLUGIN_MANAGER_PATH "~/.tmux/plugins"
 tmux kill-session -t __noop >/dev/null 2>&1 || true
 
 if [ ! -e " ~/.vim/bundle/Vundle.vim" ]; then
-  echo 'alias vimide="~/vim-ide/ide.sh"' >> ~/.bashrc
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   touch ~/.vimrc
 fi
