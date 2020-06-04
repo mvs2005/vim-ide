@@ -4,3 +4,7 @@ user [username]
 passwd [password]
 workdir [local directory path]
 sourcedir [server directory path]
+# Section tmux config
+vim -lt # vim in left top panel
+tfs -rt # tfs in right top panel
+bash -b # bash in bottom panel
