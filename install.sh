@@ -31,7 +31,6 @@ rm -rf "$HOME"/.vimrc
 cp -f "$HOME/.tmux.conf" "$HOME/.tmux.conf.bak" 2>/dev/null || true
 cp -a ./tmux/. "$HOME"/.tmux/
 ln -sf .tmux/tmux.conf "$HOME"/.tmux.conf;
-ln -sf .vim/vimrc "$HOME"/.vimrc;
 
 # Install TPM plugins.
 # TPM requires running tmux server, as soon as `tmux start-server` does not work
@@ -45,6 +44,7 @@ tmux kill-session -t __noop >/dev/null 2>&1 || true
 if [ ! -e " ~/.vim/bundle/Vundle.vim" ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
   touch ~/.vimrc
+  ln -sf ~/vim-ide/vim/vimrc "$HOME"/.vimrc;
 fi
 vim +PluginInstall +qall
 
