@@ -56,7 +56,9 @@ filetype plugin on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-
+" in NERDTree, to open-silently file in newtab with Enter, instead of default pressing "T" (same for not silently with Tab instead of t) 
+let NERDTreeMapOpenInTab='<TAB>'
+let NERDTreeMapOpenInTabSilent='<ENTER>'
 
 
 " Настройки табов для Python, согласно рекоммендациям
