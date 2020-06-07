@@ -26,7 +26,8 @@ case $sourcecontroltype in
                     /bin/TEE/tf workfold -map -workspace:$2 $sourcedir $workdir -login:$user,$passwd
                 ;;
             open )
-                    tmux new-session -A -s ide_main \; new-window -n $2 \; split-window -h -p 20 -t "$2.1" \; split-window -v -p 20 -t "$2.1" \; send-keys -t "$2.1" C- z 'cd '$workdir' && vim' Enter \; send-keys -t "$2.3" C-z 'alias build="'$buildcmd'" && alias run="'$runcmd'"' Enter
+                export TERM='screen-256color'
+                tmux new-session -A -s ide_main \; new-window -n $2 \; split-window -h -p 20 -t "$2.1" \; split-window -v -p 20 -t "$2.1" \; send-keys -t "$2.1" 'cd    ~'$workdir' && vim' Enter \; send-keys -t "$2.3" C-z ' alias build="'$buildcmd'" && alias run="'$runcmd'"' Enter
                     ;;
             attach )
                     tmux new-session -A -s ide_main
