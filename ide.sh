@@ -28,7 +28,7 @@ case $sourcecontroltype in
                   export TERM='screen-256color'
                   export "foundWindow"="'$(tmux list-windows -t ide_main | grep $2)'"
                   if [ "$foundWindow" = "''" ]; then
-                      tmux new-session -A -s ide_main \; new-window -n $2 \; split-window -h -p 20 -t "$2.1" \; split-window -v -p 20 -t "$2.1" \; send-keys -t "$2.1" C-z "cd  ~"$workdir" && vim" Enter \; send-keys -t "$2.3" C-z           "alias build='$buildcmd' && alias run='$runcmd'" Enter
+                      tmux new-session -A -s ide_main \; new-window -n $2 \; split-window -h -p 20 -t "$2.1" \; split-window -v -p 20 -t "$2.1" \; send-keys -t "$2.1" C-z "cd  ~"$workdir" && yes | vim" Enter \; send-keys -t "$2.3" C-z           "alias build='$buildcmd' && alias run='$runcmd'" Enter
                   else
                       tmux new-session -A -s ide_main
                   fi
