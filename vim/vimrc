@@ -34,6 +34,8 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'tpope/vim-surround'
 
 Plugin 'OmniSharp/omnisharp-vim'
+Plugin 'dense-analysis/ale'
+
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
@@ -173,6 +175,8 @@ set previewheight=5
 
 " Tell ALE to use OmniSharp for linting C# files, and no other linters.
 let g:ale_linters = { 'cs': ['OmniSharp'] }
+
+let g:OmniSharp_selector_ui = 'ctrlp'  " Use ctrlp.vim
 
 " Update semantic highlighting on BufEnter, InsertLeave and TextChanged
 let g:OmniSharp_highlighting = 2
