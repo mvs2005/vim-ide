@@ -233,4 +233,4 @@ nnoremap <Leader>sp :OmniSharpStopServer<CR>
 " let g:OmniSharp_want_snippet=1
 
 set guifont=Monaco:h18
-colorscheme OceanicNext
+colorscheme codedark " OceanicNext
