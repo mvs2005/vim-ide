@@ -59,13 +59,13 @@ filetype plugin on
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" in NERDTree, to open-silently file in newtab with Enter, instead of default pressing "T" (same for not silently with Tab instead of t)                                 x
-let NERDTreeMapOpenInTab='<TAB>'                                                                                                                                         x
-let NERDTreeMapOpenInTabSilent='<C-g>'                                                                                                                                   x
-nnoremap <C-o> :NERDTreeToggle<CR>                                                                                                                                       x
-                                                                                                                                                                         x
-" Navigate by tabs                                                                                                                                                       x
-nnoremap <C-l> gt                                                                                                                                                        x
+" in NERDTree, to open-silently file in newtab with Enter, instead of default pressing "T" (same for not silently with Tab instead of t)
+let NERDTreeMapOpenInTab='<TAB>'
+let NERDTreeMapOpenInTabSilent='<C-g>'
+nnoremap <C-o> :NERDTreeToggle<CR>
+
+" Navigate by tabs
+nnoremap <C-l> gt
 nnoremap <C-h> gT   
 
 " Настройки табов для Python, согласно рекоммендациям
