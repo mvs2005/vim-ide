@@ -81,7 +81,9 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
     \ 'AcceptSelection("t")': ['<cr>'],
     \ }
-    
+" CtrlP Поиск по наименованию файла
+let g:ctrlp_by_filename=1
+
 " Navigate by tabs
 nnoremap <C-l> gt
 nnoremap <C-h> gT   
