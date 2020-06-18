@@ -81,8 +81,14 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
     \ 'AcceptSelection("t")': ['<cr>'],
     \ }
-" CtrlP Поиск по наименованию файла
+
+" CtrlP поиск по наименованию файла
 let g:ctrlp_by_filename=1
+let g:ctrlp_regexp=0
+let g:ctrlp_mruf_case_sensitive=1
+let g:ctrlp_map='<c-p>'
+let g:ctrlp_cmd = 'CtrlPMRU'
+
 
 " Navigate by tabs
 nnoremap <C-l> gt
