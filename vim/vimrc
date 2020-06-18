@@ -76,6 +76,12 @@ let NERDTreeMapOpenInTab='<TAB>'
 let NERDTreeMapOpenInTabSilent='<C-g>'
 nnoremap <C-o> :NERDTreeToggle<CR>
 
+" CtrlP открывать в новом табе
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
+    \ 'AcceptSelection("t")': ['<cr>'],
+    \ }
+    
 " Navigate by tabs
 nnoremap <C-l> gt
 nnoremap <C-h> gT   
