@@ -39,6 +39,8 @@ Plugin 'RRethy/vim-illuminate'
 
 " Семантический помошник
 Plugin 'dense-analysis/ale'
+" Ctrl-n - подсказка в режиме Insert и многое другое https://github.com/fatih/vim-go/blob/master/doc/vim-go.txt
+Plugin 'fatih/vim-go'
 
 " Дерево каталогов
 Plugin 'scrooloose/nerdtree'
