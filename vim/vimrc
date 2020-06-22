@@ -38,9 +38,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'RRethy/vim-illuminate'
 
 " Семантический помошник
-Plugin 'dense-analysis/ale'
-" Ctrl-n - подсказка в режиме Insert и многое другое https://github.com/fatih/vim-go/blob/master/doc/vim-go.txt
-Plugin 'fatih/vim-go'
+ Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Дерево каталогов
 Plugin 'scrooloose/nerdtree'
@@ -90,6 +88,10 @@ let g:ctrlp_regexp=0
 let g:ctrlp_mruf_case_sensitive=1
 let g:ctrlp_map='<c-p>'
 let g:ctrlp_cmd = 'CtrlPMRU'
+
+" Настроить синтаксические помошники для COC
+let g:coc_global_extensions=[ 'coc-omnisharp' ]
+let g:coc_node_path = '/usr/bin/nodejs'
 
 
 " Navigate by tabs
